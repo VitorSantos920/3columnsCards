@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+}
+
 main {
     border: 3px solid blue;
     display: flex;
@@ -16,7 +20,7 @@ main {
 
 main .center {
     display: flex;
-    background-color: green;
+    background-color: rgb(92, 177, 92);
     padding: 20px;
     justify-content: center;
     width: 100vw;
@@ -28,7 +32,7 @@ main .center .card {
     max-width: 250px;
     
     min-height: 350px;
-    max-height: 1000px;
+    /* max-height: 400px; */
     border: 3px solid black;
 }
 
@@ -37,6 +41,12 @@ main .center .card {
     color: white;
     background-color: hsl(184, 100%, 22%);
 }
+
+
+main .center .card:first-child {background-color: hsl(31, 77%, 52%);}
+
+main .center .card:last-child {background-color: hsl(179, 100%, 13%);}
+
 
 main .center .card h3 {
     margin: 20px 0 20px 0;
@@ -47,9 +57,18 @@ main .center .card h3 {
 main .center .card p {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 100;
+    color: rgba(255, 255, 255, 0.753);
 }
 
+main .center .card a button{
+    margin-top: 55px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    color: hsl(184, 100%, 22%);
+}
 
-main .center .card:first-child {background-color: hsl(31, 77%, 52%);}
-
-main .center .card:last-child {background-color: hsl(179, 100%, 13%);}
+main .center .card:first-child a button {color: hsl(31, 77%, 52%);}
+main .center .card:last-child a button{color: hsl(179, 100%, 13%)}
