@@ -1,5 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+main {
+    border: 3px solid blue;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+}
+
+main .center {
+    display: flex;
+    background-color: green;
+    padding: 20px;
+    justify-content: center;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+main .center .card {
+    min-width: 100px;
+    max-width: 250px;
+    
+    min-height: 350px;
+    max-height: 1000px;
+    border: 3px solid black;
+}
+
+main .center .card {
+    padding: 37.5px;
+    color: white;
+    background-color: hsl(184, 100%, 22%);
+}
+
+main .center .card h3 {
+    margin: 20px 0 20px 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 32px;
+}
+
+main .center .card p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 100;
+}
+
+
+main .center .card:first-child {background-color: hsl(31, 77%, 52%);}
+
+main .center .card:last-child {background-color: hsl(179, 100%, 13%);}
