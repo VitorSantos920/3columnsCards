@@ -5,32 +5,20 @@ Geral Styles
 */
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { padding-top: 8%; }
 
 /* 
 =====
-Main & Center Styles
+Center Styles
 =====
 */
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    border: 3px solid blue;
-}
-
 main .center {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
-    width: 100vw;
-    background-color: rgb(92, 177, 92);
 }
 
 /* 
@@ -38,12 +26,7 @@ main .center {
 Card's Styles
 =====
 */
-main .center .card {
-    min-width: 100px;
-    max-width: 250px;
-    min-height: 350px;
-    max-height: 400px;
-}
+main .center .card { max-width: 250px; }
 
 main .center .card {
     color: white;
@@ -52,13 +35,13 @@ main .center .card {
 }
 
 main .center .card:first-child { 
-    background-color: hsl(31, 77%, 52%);
     border-radius: 10px 0 0 10px;
+    background-color: hsl(31, 77%, 52%);
 }
 
 main .center .card:last-child { 
-    background-color: hsl(179, 100%, 13%); 
     border-radius: 0 10px 10px 0;
+    background-color: hsl(179, 100%, 13%); 
 }
 
 /* 
@@ -83,11 +66,11 @@ main .center .card a button{
     width: 120px;
     font-weight: bold;
     cursor: pointer;
-    transition: 1s;
     border: none;
-    border-radius: 25px;
     margin-top: 55px;
+    border-radius: 25px;
     color: hsl(184, 100%, 22%);
+    transition: 1s;
 }
 
 main .center .card:first-child a button { color: hsl(31, 77%, 52%); }
@@ -103,8 +86,8 @@ main .center .card a button:hover {
 Footer Styles
 =====
 */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center; font-family: 'Big Shoulders Display', cursive;}
+.attribution a { color: hsl(31, 77%, 52%); text-decoration: none; }
 
 /* 
 =====
