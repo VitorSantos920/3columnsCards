@@ -1,3 +1,8 @@
+/* 
+=====
+Geral Styles
+=====
+*/
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200&display=swap');
 
 * {
@@ -6,69 +11,114 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
-}
-
+/* 
+=====
+Main & Center Styles
+=====
+*/
 main {
-    border: 3px solid blue;
     display: flex;
     align-items: center;
-    width: 100vw;
     justify-content: center;
+    width: 100vw;
+    border: 3px solid blue;
 }
 
 main .center {
     display: flex;
-    background-color: rgb(92, 177, 92);
-    padding: 20px;
     justify-content: center;
-    width: 100vw;
     flex-wrap: wrap;
+    padding: 20px;
+    width: 100vw;
+    background-color: rgb(92, 177, 92);
 }
 
+/* 
+=====
+Card's Styles
+=====
+*/
 main .center .card {
     min-width: 100px;
     max-width: 250px;
-    
     min-height: 350px;
-    /* max-height: 400px; */
-    border: 3px solid black;
+    max-height: 400px;
 }
 
 main .center .card {
-    padding: 37.5px;
     color: white;
+    padding: 37.5px;
     background-color: hsl(184, 100%, 22%);
 }
 
+main .center .card:first-child { 
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
 
-main .center .card:first-child {background-color: hsl(31, 77%, 52%);}
+main .center .card:last-child { 
+    background-color: hsl(179, 100%, 13%); 
+    border-radius: 0 10px 10px 0;
+}
 
-main .center .card:last-child {background-color: hsl(179, 100%, 13%);}
-
-
+/* 
+=====
+Content Card's Styles
+=====
+*/
 main .center .card h3 {
+    font-size: 32px;
     margin: 20px 0 20px 0;
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 32px;
 }
 
 main .center .card p {
-    font-family: 'Lexend Deca', sans-serif;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.753);
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 main .center .card a button{
-    margin-top: 55px;
     height: 40px;
     width: 120px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
     border: none;
     border-radius: 25px;
-    font-weight: bold;
+    margin-top: 55px;
     color: hsl(184, 100%, 22%);
 }
 
-main .center .card:first-child a button {color: hsl(31, 77%, 52%);}
-main .center .card:last-child a button{color: hsl(179, 100%, 13%)}
+main .center .card:first-child a button { color: hsl(31, 77%, 52%); }
+main .center .card:last-child a button{ color: hsl(179, 100%, 13%); }
+
+main .center .card a button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px 0 black;
+}
+
+/* 
+=====
+Footer Styles
+=====
+*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* 
+=====
+Responsive Styles
+=====
+*/
+@media screen and (max-width: 795px){
+    main .center .card:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media screen and (max-width: 545px){
+    main .center .card:first-child {
+        border-radius: 10px 10px 0 0;
+    }
+}
